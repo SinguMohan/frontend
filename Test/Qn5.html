@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    max-width: 600px;
+    margin: 0 auto;
+    }
+    .gallery img {
+    width: 100%;
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr; 
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="gallery" >
+        <img src="https://uploads.audi-mediacenter.com/system/production/media/122631/images/407644abfb62752b795fb99173261d6c464bd7fa/A240553_web_2880.jpg?1706004641" alt="Photo 1">
+        <img src="https://uploads.audi-mediacenter.com/system/production/media/122634/images/5cdeb228b51cc52aea9c89599549b65ed7596cfb/A240556_web_960.jpg?1706004789" alt="Photo 2">
+        <img src="https://uploads.audi-mediacenter.com/system/production/media/122629/images/628a9f1fcbb7a3e1e557f87cec46034128148dc4/A240551_web_960.jpg?1706004591" alt="Photo 3">
+        <img src="https://uploads.audi-mediacenter.com/system/production/media/122635/images/a91b87b34dec9418eb1b74cbb4e1c2fd46a0380b/A240557_web_960.jpg?1706004779" alt="Photo 4">
+    </div>
+</body>
+</html>
